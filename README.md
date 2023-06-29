@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+## Scratch-like Programming Environment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Features
 
-## Available Scripts
+#### Motion
 
-In the project directory, you can run:
+The 'Motion' category includes blocks that control the movement of sprites:
 
-### `npm start`
+Move [distance] steps: Moves the sprite forward by a specified distance.
+Turn [angle] degrees: Rotates the sprite by a specified angle.
+Go to x: [x] y: [y]: Moves the sprite to the specified coordinates on the stage.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Looks
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The 'Looks' category includes blocks that control the appearance of sprites:
 
-### `npm test`
+Say [message] for [time] seconds: Displays a speech bubble with a specified message for a specified duration.
+Show: Makes the sprite visible on the stage.
+Hide: Makes the sprite invisible on the stage.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Control
 
-### `npm run build`
+The 'Control' category includes blocks that control the flow of the program:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Wait [time] seconds: Pauses the program execution for a specified duration.
+Repeat [times]: Repeats a set of blocks a specified number of times.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Events
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The 'Events' category includes blocks that trigger actions based on events:
 
-### `npm run eject`
+Broadcast [message]: Sends a message to all sprites.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run this project, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Clone the repository: git clone https://github.com/your/repo.git
+Install the required dependencies: npm install
+Start the application: npm start
+Open your web browser and navigate to http://localhost:3000
 
-## Learn More
+### Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! If you have any ideas or improvements, please open an issue or submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Acknowledgements
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was inspired by the Scratch programming environment (https://scratch.mit.edu/). We would like to express our gratitude to the Scratch team for their innovative work.
