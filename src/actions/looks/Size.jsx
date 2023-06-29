@@ -7,8 +7,8 @@ const Size = ({character,comp_id}) => {
     const [state,setState]=useState({scale:1})
 
     const changeSize = () =>{
-        const e1 = document.getElementById(character.active);
-        console.log(e1)
+        const e1 = document.getElementById(`${character.active}-div`);
+        
         e1.style.transform=`scale(${state.scale})`;
     }
 

@@ -7,12 +7,28 @@ import { connect } from 'react-redux';
 const TurnAntiClockwise = ({character,characterAngle,comp_id}) => {
     const [angle,setAngle]=useState(0);
 
+    // const handleClick = () => {
+    //     let anti_angle = -1 * angle;
+    //     const e1 = document.getElementById(character.active);
+    //     const character_angle = character.characters.find((x) => x.id === character.active);
+      
+    //     if (e1 && character_angle && typeof character_angle.angle === 'number' && typeof anti_angle === 'number') {
+    //       const newAngle = character_angle.angle + anti_angle;
+      
+    //       if (!isNaN(newAngle) && isFinite(newAngle)) {
+    //         e1.style.transform = `rotate(${newAngle}deg)`;
+    //         characterAngle(newAngle);
+    //       }
+    //     }
+    //   };
+      
+
     const handleClick=()=>{
         let anti_angle= -1*angle;
-        const e1=document.getElementById(character.active);
+        const e1=document.getElementById(`${character.active}-div`);
         const character_angle=character.characters.find((x)=>x.id===character.active);
         if(character_angle){
-            e1.style.transform=`rotate(${character_angle.angle+anti_angle} deg)`
+            e1.style.transform=`rotate(${character_angle.angle+anti_angle}deg)`
             characterAngle(character_angle.angle+anti_angle);
         }
     }

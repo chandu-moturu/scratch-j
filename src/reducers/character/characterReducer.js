@@ -40,8 +40,9 @@ export const characterReducer = (state = initialState, action) => {
         (character) => character.id === state.active
       );
 
-      if (curr_character_index >=0) {
+      if (curr_character_index >-1) {
         curr_character.angle = action.angle;
+        console.log(action.angle)
         character_Array[curr_character_index] = curr_character;
       }
 

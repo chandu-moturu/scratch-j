@@ -9,7 +9,9 @@ import { createStyles, makeStyles, withStyles } from "@material-ui/core";
 import {getComponent} from '../../../actions/getItems'
 import { connect } from "react-redux";
 import { addList } from "../../../reducers/midarea/listActions";
-
+import zoomin from '../../../assets/icons/zoom-in.svg'
+import zoomout from '../../../assets/icons/zoom-out.svg'
+import resize from '../../../assets/icons/resize.svg'
 
 //** 
 
@@ -126,7 +128,7 @@ const MiddleBar = ({ area_list, add_list, event_values }) => {
         {area_list.midAreaLists.map((l) => {
 
           return (
-            <div className="w-60" key={l.id}>
+            <div className="w-60" key={l.id}  >
               <Paper className="p-4 ml-4" elevation={3}>
                 <div className="w-52 p-2">
 
@@ -184,6 +186,12 @@ const MiddleBar = ({ area_list, add_list, event_values }) => {
           );
         })}
       </div>
+      <span className="p-4 m-2">
+      <img src={zoomin} alt="" style={{"width":"30px",marginLeft:"560px",marginTop:'300px'}}/>
+      <img src={zoomout} alt="" style={{"width":"30px",marginLeft:"560px",marginTop:'10px'}}/>
+      <img src={resize} alt="" style={{"width":"30px",marginLeft:"560px",marginTop:'10px'}}/>
+
+      </span>
       </Paper>
       
     </div>

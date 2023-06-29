@@ -9,10 +9,10 @@ const TurnClockwise = ({character,characterAngle,comp_id}) => {
 
     const handleClick=()=>{
 
-        const e1=document.getElementById(character.active);
+        const e1=document.getElementById(`${character.active}-div`);
         const character_angle=character.characters.find((x)=>x.id===character.active);
         if(character_angle){
-            e1.style.transform=`rotate(${character_angle.angle+angle} deg)`
+            e1.style.transform=`rotate(${character_angle.angle+angle}deg)`
             characterAngle(character_angle.angle+angle);
         }
     }

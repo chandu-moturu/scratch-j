@@ -153,7 +153,7 @@ const RightBar = ({ character, add_character, set_active }) => {
         >
           <div className="border-b " style={{ height: "80px" }}>
             <div
-              className="flex mb-2"
+              className="flex mb-2 text-sm"
               style={{ justifyContent: "space-between" }}
             >
               <span>Sprite</span>
@@ -179,7 +179,7 @@ const RightBar = ({ character, add_character, set_active }) => {
             </div>
           </div>
           <div
-            style={{ backgroundColor: "black", height: "180px" }}
+            style={{ backgroundColor: "gray", height: "180px" }}
             className="mt-3 p-5 rounded"
           >
             <Paper elevation={2} className="mt-4 p-5" style={{ width: "70px" }}>
@@ -187,7 +187,7 @@ const RightBar = ({ character, add_character, set_active }) => {
             </Paper>
           </div>
         </Paper>
-        <Paper elevation={3} className="ml-3 p-4">
+        <Paper elevation={3} className="ml-3 p-4 text-sm">
           <div className="text-center border-b">stage</div>
           <Paper className="p-5 mt-2 mb-3"></Paper>
           <p>backdrops</p>

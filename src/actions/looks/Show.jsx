@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 const Show = ({character,comp_id}) => {
 
     const handleDisplay =()=>{
-        const e1=document.getElementById(character.active);
+        const e1=document.getElementById(`${character.active}-div`);
         e1.style.display = "inline-block"
     };
   return (
